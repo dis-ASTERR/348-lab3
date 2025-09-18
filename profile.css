@@ -14,4 +14,16 @@ body {
     background-size: auto 25%;
     background-repeat: repeat;
     font-family: monospace;
+    border: 1px solid black;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }

@@ -16,24 +16,27 @@
             </form>
             <?php
                 $n = $_POST['num']+1; //snag from html element
+                echo "<table>";
                 for ($i=0; $i<$n; $i++) { //row loop
-                    echo "$i ";
+                    echo "<tr>";
+                    echo "<th>$i </th>";
                     // print i
                     for ($j=0;$j<$n; $j++) {
                         if ($i == 0) {
-                            echo "$j ";
+                            echo "<th>$j </th>";
                         } else {
                             $temp = $j*$i;
-                            echo "$temp ";
+                            echo "<td>$temp </td>";
                         }
                         //if i = 0, print j
                         // else print values i*j
                     }
-                    echo "<br>";
+                    echo "</tr>";
                     // start new row
                 }
-
+                echo "</table>";
             ?>
+            <a href="index.html">Back to index</a>
         </div>
     </body>
 
